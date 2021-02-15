@@ -1,0 +1,26 @@
+.union_products{
+    margin-bottom: 15px;
+}
+.union_products_list{
+    display: block;
+}
+.union_products_item{
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 27px;
+    vertical-align: middle;
+    padding: 0 15px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: #666666;
+}
+.union_products_item:hover,
+.union_products_item:active,
+.union_products_item:focus{
+    background: #009CA5;
+    color: #fff;
+    border-color: transparent;
+}

@@ -1,0 +1,100 @@
+.catalog_ingroup{}
+.catalog_ingroup_item{
+    padding: 13px 30px;
+    border: 1px solid #f3f3f3;
+}
+.catalog_ingroup_item.active{
+    padding: 13px 30px 30px 30px;
+}
+.catalog_ingroup_item.active .catalog_ingroup_list{
+    display: block;
+    opacity: 1;
+}
+.catalog_ingroup_info{
+    position: relative;
+    cursor: pointer;
+}
+.catalog_ingroup_item:hover{
+    -webkit-box-shadow: 0 0 14px rgba(0,0,0,0.10);
+}
+
+.catalog_ingroup_info:hover .catalog_ingroup_icon{
+    color: #0ab7c0;
+}
+.catalog_ingroup_char{
+    display: table;
+    height: 40px;
+    padding: 0 20px 0 18px;
+    vertical-align: middle;
+    font-size: 19px;
+    color: #333;
+    font-weight: bold;
+}
+.catalog_ingroup_char span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.catalog_ingroup_item.active .catalog_ingroup_icon{
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+.catalog_ingroup_info .catalog_ingroup_icon{
+    display: inline-block;
+    content: '\f067';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font: normal normal normal 14px/1 FontAwesome;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+.catalog_ingroup_info .catalog_ingroup_icon:before{
+    content: '\f067';
+}
+.catalog_ingroup_list{
+    display: none;
+    opacity: 0;
+    padding: 2% 6% 0 6%;
+}
+.catalog_ingroup_list.single-item ul li{
+    padding-top: 0;
+}
+.catalog_ingroup_list ul{
+    list-style: none;
+    column-width: auto;
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 0;
+}
+.catalog_ingroup_list ul li{
+    line-height: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .catalog_ingroup_list ul{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2
+    }
+}
+@media (max-width: 560px) {
+    .catalog_ingroup_list ul{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1
+    }
+}
